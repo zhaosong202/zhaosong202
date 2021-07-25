@@ -32,8 +32,8 @@ module.exports = {
     contentBase: path.join(__dirname, ''),
     compress: true,
     watchContentBase: true,
-    port: 8080,
-    host: '0.0.0.0', //your ip address
+    port: 3003,
+    host: '127.0.0.1', //your ip address
     disableHostCheck: true, //coment these out for prod
   },
   node: {
