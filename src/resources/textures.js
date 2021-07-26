@@ -1,40 +1,40 @@
 //billboardTextures
 let billboardTextures = {};
-billboardTextures.terpSolutionsTexture = 'https://zhaosong202.github.io/my-website/src/jsm/terpSolutions.png';
+billboardTextures.terpSolutionsTexture = 'src/jsm/terpSolutions.png';
 billboardTextures.bagHolderBetsTexture =
-  'https://zhaosong202.github.io/my-website/src/jsm/Bagholdersbetsbillboard.png';
+  'src/jsm/Bagholdersbetsbillboard.png';
 billboardTextures.homeSweetHomeTexture =
-  'https://zhaosong202.github.io/my-website/src/jsm/home-sweet-home-portrait.png';
+  'src/jsm/home-sweet-home-portrait.png';
 
 //box textures
 let boxTexture = {};
-boxTexture.Github = 'https://zhaosong202.github.io/my-website/src/jsm/githubLogo.png';
-boxTexture.twitter = 'https://zhaosong202.github.io/my-website/src/jsm/twitter.png';
-boxTexture.LinkedIn = 'https://zhaosong202.github.io/my-website/src/jsm/linkedInLogo.png';
-boxTexture.mail = 'https://zhaosong202.github.io/my-website/src/jsm/envelope.png';
-boxTexture.globe = 'https://zhaosong202.github.io/my-website/src/jsm/thunder.png';
-boxTexture.reactIcon = 'https://zhaosong202.github.io/my-website/src/jsm/react.png';
-boxTexture.allSkills = 'https://zhaosong202.github.io/my-website/src/jsm/allSkills.png';
-boxTexture.lensFlareMain = 'https://zhaosong202.github.io/my-website/src/jsm/lensflare0.png';
-boxTexture.skrillex = 'https://zhaosong202.github.io/my-website/src/jsm/skrillex.png';
-boxTexture.edmText = 'https://zhaosong202.github.io/my-website/src/jsm/EDM.png';
-boxTexture.writing = 'https://zhaosong202.github.io/my-website/src/jsm/writing.png';
+boxTexture.Github = 'src/jsm/githubLogo.png';
+boxTexture.twitter = 'src/jsm/twitter.png';
+boxTexture.LinkedIn = 'src/jsm/linkedInLogo.png';
+boxTexture.mail = 'src/jsm/envelope.png';
+boxTexture.globe = 'src/jsm/thunder.png';
+boxTexture.reactIcon = 'src/jsm/react.png';
+boxTexture.allSkills = 'src/jsm/allSkills.png';
+boxTexture.lensFlareMain = 'src/jsm/lensflare0.png';
+boxTexture.skrillex = 'src/jsm/skrillex.png';
+boxTexture.edmText = 'src/jsm/EDM.png';
+boxTexture.writing = 'src/jsm/writing.png';
 
 //material textures
-let stoneTexture = 'https://zhaosong202.github.io/my-website/src/jsm/stone.png';
-let woodTexture = 'https://zhaosong202.github.io/my-website/src/jsm/woodTexture.jpg';
+let stoneTexture = 'src/jsm/stone.png';
+let woodTexture = 'src/jsm/woodTexture.jpg';
 
 //text
 let inputText = {};
-inputText.terpSolutionsText = 'https://zhaosong202.github.io/my-website/src/jsm/terp-solutions-text.png';
-inputText.activities = 'https://zhaosong202.github.io/my-website/src/jsm/activities_text.png';
-inputText.bagholderBetsText = 'https://zhaosong202.github.io/my-website/src/jsm/bagholderbets-text.png';
-inputText.homeSweetHomeText = 'https://zhaosong202.github.io/my-website/src/jsm/home-sweet-home-text.png';
-inputText.staticPortfolio = 'https://zhaosong202.github.io/my-website/src/jsm/static-portfolio.png';
+inputText.terpSolutionsText = 'src/jsm/terp-solutions-text.png';
+inputText.activities = 'src/jsm/activities_text.png';
+inputText.bagholderBetsText = 'src/jsm/bagholderbets-text.png';
+inputText.homeSweetHomeText = 'src/jsm/home-sweet-home-text.png';
+inputText.staticPortfolio = 'src/jsm/static-portfolio.png';
 
 //SVG
 let SVG = {};
-SVG.reactLogo = 'https://zhaosong202.github.io/my-website/src/jsm/react-svg.svg';
+SVG.reactLogo = 'src/jsm/react-svg.svg';
 
 //URLs
 let URL = {};

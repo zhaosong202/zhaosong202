@@ -1,8 +1,8 @@
 // use Three.js to set up graphics
 import * as THREE from 'three';
 import Stats from 'stats.js';
-import galaxyVertexShader from '../jsm/vertex.glsl';
-import galaxyFragmentShader from '../jsm/fragment.glsl';
+import galaxyVertexShader from '@/jsm/vertex.glsl';
+import galaxyFragmentShader from '@/jsm/fragment.glsl';
 
 //threejs variable declaration
 export let clock,
@@ -85,7 +85,7 @@ export function createWorld() {
 
 export function glowingParticles() {
   var particleTextureLoader = new THREE.TextureLoader(manager);
-  var particleTexture = particleTextureLoader.load('https://zhaosong202.github.io/my-website/src/jsm/spark.png');
+  var particleTexture = particleTextureLoader.load('src/jsm/spark.png');
 
   particleGroup = new THREE.Object3D();
   particleGroup.position.x = -1;
