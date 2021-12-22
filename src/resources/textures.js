@@ -1,6 +1,6 @@
 //billboardTextures
 let billboardTextures = {};
-billboardTextures.terpSolutionsTexture = "src/jsm/terpSolutions.png";
+billboardTextures.terpSolutionsTexture = "src/jsm/terpSolutions.jpg";
 billboardTextures.bagHolderBetsTexture = "src/jsm/Bagholdersbetsbillboard.png";
 billboardTextures.homeSweetHomeTexture = "src/jsm/home-sweet-home-portrait.png";
 
@@ -12,7 +12,7 @@ boxTexture.LinkedIn = "src/jsm/linkedInLogo.png";
 boxTexture.mail = "src/jsm/gmail.png";
 boxTexture.globe = "src/jsm/thunder.png";
 boxTexture.reactIcon = "src/jsm/react.png";
-boxTexture.allSkills = "src/jsm/skills.jpeg";
+boxTexture.allSkills = "src/jsm/allSkills.png";
 boxTexture.lensFlareMain = "src/jsm/lensflare0.png";
 boxTexture.skrillex = "src/jsm/skrillex.png";
 boxTexture.edmText = "src/jsm/EDM.png";
