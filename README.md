@@ -1,16 +1,12 @@
-# Ryan Floyd's Portfolio
+# Zhaosong's Portfolio
 
 This was my quarantine project! I decided to revamp my portfolio into an interactive 3D world built using [Three.js](https://github.com/mrdoob/three.js) for graphics ( WebGL under the hood) and [Ammo.js](https://github.com/kripken/ammo.js), a port of the [Bullet physics engine](https://pybullet.org/wordpress/) to JavaScript. I had an absolute blast making this!
 
-Try it out! [https://www.ryan-floyd.com/](https://www.ryan-floyd.com/)
-
-I wrote an article explaining the site [here](https://dev.to/mrryanfloyd/create-an-interactive-3d-portfolio-website-that-stands-out-to-employers-47gc)
-
-![alt text](/ryan_floyd_portfolio_gif.gif)
+Try it out! [https://zhaosong202.github.io/my-resume/](https://zhaosong202.github.io/my-resume/)
 
 ## Motivation
 
-While exploring [Google Experiments](https://experiments.withgoogle.com/) I discovered an amazing world of web rendering. There are so many incredible web projects out there, and I wanted to learn this technology. I was inspired by many awesome projects, but specifically examples from the [official examples/documentation](https://threejs.org/), [Lee Stemkoski](https://home.adelphi.edu/~stemkoski/) and [Three.js Fundamentals](https://threejsfundamentals.org/).
+While exploring [Google Experiments](https://experiments.withgoogle.com/) I discovered an amazing world of web rendering. There are so many incredible web projects out there, and I wanted to learn this technology. I was inspired by many awesome projects, but specifically examples from the [official examples/documentation](https://threejs.org/), and [Three.js Fundamentals](https://threejsfundamentals.org/).
 
 ## Features
 
@@ -29,18 +25,4 @@ While exploring [Google Experiments](https://experiments.withgoogle.com/) I disc
 - Express (Node.js framework)
 - Webpack (module/ dependency bundler)
 - HTML/CSS
-- Hosted on Heroku
 - Git (version control) / Github for code hosting
-
-## Usage
-
-To use locally, clone the repository, install dependencies, run using webpack's dev server, and navigate to localhost:8080 in your browser:
-
-```javascript
-npm i
-npm run dev
-```
-
-## License
-
-The project is licensed under the MIT License.
