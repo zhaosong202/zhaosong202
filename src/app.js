@@ -1,6 +1,6 @@
-import * as THREE from 'three';
-import { WEBGL } from './WebGL';
-import * as Ammo from './builds/ammo';
+import * as THREE from "three";
+import { WEBGL } from "./WebGL";
+import * as Ammo from "./builds/ammo";
 import {
   billboardTextures,
   boxTexture,
@@ -8,7 +8,7 @@ import {
   URL,
   stoneTexture,
   woodTexture,
-} from './resources/textures';
+} from "./resources/textures";
 
 import {
   setupEventHandlers,
@@ -16,7 +16,7 @@ import {
   isTouchscreenDevice,
   touchEvent,
   createJoystick,
-} from './resources/eventHandlers';
+} from "./resources/eventHandlers";
 
 import {
   preloadDivs,
@@ -26,7 +26,7 @@ import {
   startButton,
   noWebGL,
   fadeOutDivs,
-} from './resources/preload';
+} from "./resources/preload";
 
 import {
   clock,
@@ -48,14 +48,14 @@ import {
   galaxyMaterial,
   galaxyClock,
   galaxyPoints,
-} from './resources/world';
+} from "./resources/world";
 
 import {
   simpleText,
   floatingLabel,
   allSkillsSection,
   createTextOnPlane,
-} from './resources/surfaces';
+} from "./resources/surfaces";
 
 import {
   pickPosition,
@@ -63,7 +63,7 @@ import {
   getCanvasRelativePosition,
   rotateCamera,
   launchHover,
-} from './resources/utils';
+} from "./resources/utils";
 
 export let cursorHoverObjects = [];
 
@@ -173,7 +173,7 @@ Ammo().then((Ammo) => {
     let mass = 3;
 
     var marble_loader = new THREE.TextureLoader(manager);
-    var marbleTexture = marble_loader.load('./src/jsm/earth.jpg');
+    var marbleTexture = marble_loader.load("./src/jsm/earth.jpg");
     marbleTexture.wrapS = marbleTexture.wrapT = THREE.RepeatWrapping;
     marbleTexture.repeat.set(1, 1);
     marbleTexture.anisotropy = 1;
@@ -245,7 +245,7 @@ Ammo().then((Ammo) => {
 
     //import beach ball texture
     var texture_loader = new THREE.TextureLoader(manager);
-    var beachTexture = texture_loader.load('./src/jsm/BeachBallColor.jpg');
+    var beachTexture = texture_loader.load("./src/jsm/BeachBallColor.jpg");
     beachTexture.wrapS = beachTexture.wrapT = THREE.RepeatWrapping;
     beachTexture.repeat.set(1, 1);
     beachTexture.anisotropy = 1;
@@ -377,7 +377,7 @@ Ammo().then((Ammo) => {
   function loadRyanText() {
     var text_loader = new THREE.FontLoader();
 
-    text_loader.load('./src/jsm/Roboto_Regular.json', function (font) {
+    text_loader.load("./src/jsm/Roboto_Regular.json", function (font) {
       var xMid, text;
 
       var color = 0xfffc00;
@@ -387,7 +387,7 @@ Ammo().then((Ammo) => {
         new THREE.MeshPhongMaterial({ color: color }), // side
       ];
 
-      var geometry = new THREE.TextGeometry('ZHAO SONG', {
+      var geometry = new THREE.TextGeometry("ZHAO SONG", {
         font: font,
         size: 3,
         height: 0.5,
@@ -421,7 +421,7 @@ Ammo().then((Ammo) => {
   function loadEngineerText() {
     var text_loader = new THREE.FontLoader();
 
-    text_loader.load('./src/jsm/Roboto_Regular.json', function (font) {
+    text_loader.load("./src/jsm/Roboto_Regular.json", function (font) {
       var xMid, text;
 
       var color = 0x00ff08;
@@ -431,7 +431,7 @@ Ammo().then((Ammo) => {
         new THREE.MeshPhongMaterial({ color: color }), // side
       ];
 
-      var geometry = new THREE.TextGeometry('FRONTEND ENGINEER', {
+      var geometry = new THREE.TextGeometry("FRONTEND ENGINEER", {
         font: font,
         size: 1.5,
         height: 0.5,
@@ -903,18 +903,18 @@ Ammo().then((Ammo) => {
   //loading page section
   function startButtonEventListener() {
     for (let i = 0; i < fadeOutDivs.length; i++) {
-      fadeOutDivs[i].classList.add('fade-out');
+      fadeOutDivs[i].classList.add("fade-out");
     }
     setTimeout(() => {
-      document.getElementById('preload-overlay').style.display = 'none';
+      document.getElementById("preload-overlay").style.display = "none";
     }, 750);
 
-    startButton.removeEventListener('click', startButtonEventListener);
-    document.addEventListener('click', launchClickPosition);
+    startButton.removeEventListener("click", startButtonEventListener);
+    document.addEventListener("click", launchClickPosition);
     createBeachBall();
 
     setTimeout(() => {
-      document.addEventListener('mousemove', launchHover);
+      document.addEventListener("mousemove", launchHover);
     }, 1000);
   }
 
@@ -953,15 +953,15 @@ Ammo().then((Ammo) => {
 
   manager.onLoad = function () {
     var readyStateCheckInterval = setInterval(function () {
-      if (document.readyState === 'complete') {
+      if (document.readyState === "complete") {
         clearInterval(readyStateCheckInterval);
         for (let i = 0; i < preloadDivs.length; i++) {
-          preloadDivs[i].style.visibility = 'hidden'; // or
-          preloadDivs[i].style.display = 'none';
+          preloadDivs[i].style.visibility = "hidden"; // or
+          preloadDivs[i].style.display = "none";
         }
         for (let i = 0; i < postloadDivs.length; i++) {
-          postloadDivs[i].style.visibility = 'visible'; // or
-          postloadDivs[i].style.display = 'block';
+          postloadDivs[i].style.visibility = "visible"; // or
+          postloadDivs[i].style.display = "block";
         }
       }
     }, 1000);
@@ -972,14 +972,14 @@ Ammo().then((Ammo) => {
     //console.log("Error loading");
   };
 
-  startButton.addEventListener('click', startButtonEventListener);
+  startButton.addEventListener("click", startButtonEventListener);
 
   if (isTouchscreenDevice()) {
-    document.getElementById('appDirections').innerHTML =
-      'Use the joystick in the bottom left to move the ball. Please use your device in portrait orientation!';
-    createJoystick(document.getElementById('joystick-wrapper'));
-    document.getElementById('joystick-wrapper').style.visibility = 'visible';
-    document.getElementById('joystick').style.visibility = 'visible';
+    document.getElementById("appDirections").innerHTML =
+      "Use the joystick in the bottom left to move the ball. Please use your device in portrait orientation!";
+    createJoystick(document.getElementById("joystick-wrapper"));
+    document.getElementById("joystick-wrapper").style.visibility = "visible";
+    document.getElementById("joystick").style.visibility = "visible";
   }
 
   //initialize world and begin
@@ -1041,75 +1041,23 @@ Ammo().then((Ammo) => {
     );
 
     createBox(
-      4,
-      2,
-      -70,
-      4,
-      4,
-      1,
-      boxTexture.twitter,
-      URL.twitter,
-      0xffffff,
-      true
-    );
-
-    createBox(
       19,
       2,
       -70,
       4,
       4,
       1,
-      boxTexture.LinkedIn,
-      URL.LinkedIn,
+      boxTexture.JueJin,
+      URL.JueJin,
       0x0077b5,
       true
     );
-    createBox(
-      35,
-      2,
-      -70,
-      4,
-      4,
-      1,
-      boxTexture.globe,
-      URL.ryanfloyd,
-      0xffffff,
-      false
-    );
 
-    createBox(
-      27,
-      2,
-      -70,
-      4,
-      4,
-      1,
-      boxTexture.mail,
-      'mailto:arfloyd7@gmail.com',
-      0x000000,
-      false
-    );
+    createBox(27, 2, -70, 4, 4, 1, boxTexture.email, URL.email, 0x000000, true);
 
-    createBox(
-      44,
-      2,
-      -70,
-      4,
-      4,
-      1,
-      boxTexture.writing,
-      URL.devTo,
-      0x000000,
-      false
-    );
-
-    floatingLabel(3.875, 4.5, -70, 'Twitter');
-    floatingLabel(11.875, 4.5, -70, 'Github');
-    floatingLabel(19.125, 4.5, -70, 'LinkedIn');
-    floatingLabel(26.875, 4.5, -70, 'Email');
-    floatingLabel(35, 6.5, -70, '  Static \nWebsite');
-    floatingLabel(44, 6.5, -70, '   How I \nmade this');
+    floatingLabel(11.875, 4.5, -70, "Github");
+    floatingLabel(19.125, 4.5, -70, "JueJin");
+    floatingLabel(26.875, 4.5, -70, "Email");
 
     allSkillsSection(-50, 0.025, 20, 40, 40, boxTexture.allSkills);
     allSkillsSection(61, 0.025, 13, 30, 60, inputText.activities);
@@ -1125,21 +1073,21 @@ Ammo().then((Ammo) => {
 
     let touchText, instructionsText;
     if (isTouchscreenDevice()) {
-      touchText = 'Touch boxes with your \nfinger to open links';
+      touchText = "Touch boxes with your \nfinger to open links";
       instructionsText =
-        '   Use the joystick in the bottom \nleft of the screen to move the ball.';
+        "   Use the joystick in the bottom \nleft of the screen to move the ball.";
     } else {
-      touchText = 'Click on boxes with \nthe mouse to open links';
+      touchText = "Click on boxes with \nthe mouse to open links";
       instructionsText =
-        'Use the arrow keys on your \n keyboard to move the ball.';
+        "Use the arrow keys on your \n keyboard to move the ball.";
     }
 
     simpleText(9, 0.01, 5, instructionsText, 1.25);
 
     simpleText(23, 0.01, -60, touchText, 1.5);
-    simpleText(-50, 0.01, -5, 'SKILLS', 3);
-    simpleText(-42, 0.01, -30, 'EXPERIENCE', 3);
-    simpleText(61, 0.01, -15, 'TIMELINE', 3);
+    simpleText(-50, 0.01, -5, "SKILLS", 3);
+    simpleText(-42, 0.01, -30, "EXPERIENCE", 3);
+    simpleText(61, 0.01, -15, "TIMELINE", 3);
 
     wallOfBricks();
     createTriangle(63, -55);

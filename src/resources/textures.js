@@ -7,16 +7,14 @@ billboardTextures.homeSweetHomeTexture = "src/jsm/home-sweet-home-portrait.png";
 //box textures
 let boxTexture = {};
 boxTexture.Github = "src/jsm/githubLogo.png";
-boxTexture.twitter = "src/jsm/twitter.png";
-boxTexture.LinkedIn = "src/jsm/linkedInLogo.png";
-boxTexture.mail = "src/jsm/gmail.png";
+boxTexture.JueJin = "src/jsm/JueJin.svg";
+boxTexture.email = "src/jsm/gmail.png";
 boxTexture.globe = "src/jsm/thunder.png";
 boxTexture.reactIcon = "src/jsm/react.png";
 boxTexture.allSkills = "src/jsm/allSkills.png";
 boxTexture.lensFlareMain = "src/jsm/lensflare0.png";
 boxTexture.skrillex = "src/jsm/skrillex.png";
 boxTexture.edmText = "src/jsm/EDM.png";
-boxTexture.writing = "src/jsm/writing.png";
 
 //material textures
 let stoneTexture = "src/jsm/stone.png";
@@ -38,13 +36,11 @@ SVG.reactLogo = "src/jsm/react-svg.svg";
 let URL = {};
 URL.terpsolutions =
   "https://web.archive.org/web/20200302001846/https://terpsolutions.com/";
-URL.ryanfloyd = "https://ryanfloyd.io";
 URL.bagholderBets = "https://bagholder-bets.herokuapp.com";
 URL.homeSweetHomeURL = "https://github.com/MrRyanFloyd/home-sweet-127.0.0.1";
 URL.gitHub = "https://github.com/zhaosong202";
-URL.twitter = "https://twitter.com/mrryanfloyd";
-URL.LinkedIn = "https://www.linkedin.com/in/ryan-floyd/";
-URL.email = "https://zhaosong202@gmail.com";
+URL.JueJin = "https://juejin.cn/user/826443840625992";
+URL.email = "mailto:zhaosong202@gmail.com";
 URL.githubBagholder = "https://github.com/MrRyanFloyd/bagholder-bets";
 URL.githubHomeSweetHome = "https://github.com/MrRyanFloyd/home-sweet-127.0.0.1";
 URL.devTo =
