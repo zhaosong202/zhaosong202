@@ -999,8 +999,8 @@ Ammo().then((Ammo) => {
       -80,
       2.5,
       -70,
-      billboardTextures.terpSolutionsTexture,
-      URL.terpsolutions,
+      billboardTextures.lanxieTexture,
+      URL.lanxie,
       Math.PI * 0.22
     );
 
@@ -1008,24 +1008,14 @@ Ammo().then((Ammo) => {
       -45,
       2.5,
       -78,
-      billboardTextures.bagHolderBetsTexture,
+      billboardTextures.sportText,
       URL.githubBagholder,
       Math.PI * 0.17
     );
 
-    createBillboardRotated(
-      -17,
-      1.25,
-      -75,
-      billboardTextures.homeSweetHomeTexture,
-      URL.githubHomeSweetHome,
-      Math.PI * 0.15
-    );
-
     ryanFloydWords(11.2, 1, -20);
-    createTextOnPlane(-70, 0.01, -48, inputText.terpSolutionsText, 20, 40);
-    createTextOnPlane(-42, 0.01, -53, inputText.bagholderBetsText, 20, 40);
-    createTextOnPlane(-14, 0.01, -49, inputText.homeSweetHomeText, 20, 40);
+    createTextOnPlane(-70, 0.01, -48, inputText.lanxieText, 25, 35);
+    createTextOnPlane(-42, 0.01, -50, inputText.sportText, 25, 37);
 
     createBox(
       12,
@@ -1086,7 +1076,7 @@ Ammo().then((Ammo) => {
 
     simpleText(23, 0.01, -60, touchText, 1.5);
     simpleText(-50, 0.01, -5, "SKILLS", 3);
-    simpleText(-42, 0.01, -30, "EXPERIENCE", 3);
+    simpleText(-42, 0.01, -20, "EXPERIENCE", 3);
     simpleText(61, 0.01, -15, "TIMELINE", 3);
 
     wallOfBricks();

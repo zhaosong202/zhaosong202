@@ -1,8 +1,7 @@
 //billboardTextures
 let billboardTextures = {};
-billboardTextures.terpSolutionsTexture = "src/jsm/terpSolutions.jpg";
-billboardTextures.bagHolderBetsTexture = "src/jsm/Bagholdersbetsbillboard.png";
-billboardTextures.homeSweetHomeTexture = "src/jsm/home-sweet-home-portrait.png";
+billboardTextures.lanxieTexture = "src/jsm/lanxie.jpg";
+billboardTextures.sportText = "src/jsm/sport.jpeg";
 
 //box textures
 let boxTexture = {};
@@ -22,9 +21,9 @@ let woodTexture = "src/jsm/woodTexture.jpg";
 
 //text
 let inputText = {};
-inputText.terpSolutionsText = "src/jsm/terp-solutions-text.png";
+inputText.lanxieText = "src/jsm/lanxie-text.png";
 inputText.activities = "src/jsm/activities_text.png";
-inputText.bagholderBetsText = "src/jsm/bagholderbets-text.png";
+inputText.sportText = "src/jsm/sport-text.png";
 inputText.homeSweetHomeText = "src/jsm/home-sweet-home-text.png";
 inputText.staticPortfolio = "src/jsm/static-portfolio.png";
 
@@ -34,7 +33,7 @@ SVG.reactLogo = "src/jsm/react-svg.svg";
 
 //URLs
 let URL = {};
-URL.terpsolutions =
+URL.lanxie =
   "https://web.archive.org/web/20200302001846/https://terpsolutions.com/";
 URL.bagholderBets = "https://bagholder-bets.herokuapp.com";
 URL.homeSweetHomeURL = "https://github.com/MrRyanFloyd/home-sweet-127.0.0.1";
