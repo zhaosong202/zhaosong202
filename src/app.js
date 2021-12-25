@@ -1008,14 +1008,24 @@ Ammo().then((Ammo) => {
       -45,
       2.5,
       -78,
-      billboardTextures.sportText,
-      URL.githubBagholder,
+      billboardTextures.sportTexture,
+      URL.sport,
       Math.PI * 0.17
+    );
+
+    createBillboard(
+      -10,
+      2.5,
+      -78,
+      billboardTextures.cbaTexture,
+      URL.cba,
+      Math.PI * 0.1
     );
 
     ryanFloydWords(11.2, 1, -20);
     createTextOnPlane(-70, 0.01, -48, inputText.lanxieText, 25, 35);
     createTextOnPlane(-42, 0.01, -50, inputText.sportText, 25, 37);
+    createTextOnPlane(-12, 0.01, -50, inputText.cbaText, 25, 37);
 
     createBox(
       12,
@@ -1050,7 +1060,7 @@ Ammo().then((Ammo) => {
     floatingLabel(26.875, 4.5, -70, "Email");
 
     allSkillsSection(-50, 0.025, 20, 40, 40, boxTexture.allSkills);
-    allSkillsSection(61, 0.025, 13, 30, 60, inputText.activities);
+    allSkillsSection(61, 0.025, 19, 40, 60, inputText.activities);
     allSkillsSection(9, 0.01, 20, 21, 10.5, inputText.staticPortfolio);
 
     //lensflare
