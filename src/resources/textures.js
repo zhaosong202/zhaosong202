@@ -35,17 +35,12 @@ SVG.reactLogo = "src/jsm/react-svg.svg";
 let URL = {};
 URL.lanxie =
   "https://web.archive.org/web/20200302001846/https://terpsolutions.com/";
-URL.bagholderBets = "https://bagholder-bets.herokuapp.com";
-URL.homeSweetHomeURL = "https://github.com/MrRyanFloyd/home-sweet-127.0.0.1";
 URL.gitHub = "https://github.com/zhaosong202";
 URL.JueJin = "https://juejin.cn/user/826443840625992";
 URL.email = "mailto:zhaosong202@gmail.com";
 URL.cba = "https://www.cbaleague.com/data/";
-URL.sport = "https://artxyc.com";
+URL.sport = "https://www.artxyc.com";
 URL.lanxie = null;
-URL.githubHomeSweetHome = "https://github.com/MrRyanFloyd/home-sweet-127.0.0.1";
-URL.devTo =
-  "https://dev.to/mrryanfloyd/create-an-interactive-3d-portfolio-website-that-stands-out-to-employers-47gc";
 
 export {
   billboardTextures,
