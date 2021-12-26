@@ -1001,7 +1001,7 @@ Ammo().then((Ammo) => {
       -70,
       billboardTextures.lanxieTexture,
       URL.lanxie,
-      Math.PI * 0.22
+      Math.PI * 0.1
     );
 
     createBillboard(
@@ -1010,17 +1010,10 @@ Ammo().then((Ammo) => {
       -78,
       billboardTextures.sportTexture,
       URL.sport,
-      Math.PI * 0.17
+      Math.PI * 0.05
     );
 
-    createBillboard(
-      -10,
-      2.5,
-      -78,
-      billboardTextures.cbaTexture,
-      URL.cba,
-      Math.PI * 0.1
-    );
+    createBillboard(-10, 2.5, -78, billboardTextures.cbaTexture, URL.cba, 0);
 
     ryanFloydWords(11.2, 1, -20);
     createTextOnPlane(-70, 0.01, -48, inputText.lanxieText, 25, 35);
@@ -1028,7 +1021,7 @@ Ammo().then((Ammo) => {
     createTextOnPlane(-12, 0.01, -50, inputText.cbaText, 25, 37);
 
     createBox(
-      12,
+      22,
       2,
       -70,
       4,
@@ -1041,7 +1034,7 @@ Ammo().then((Ammo) => {
     );
 
     createBox(
-      19,
+      29,
       2,
       -70,
       4,
@@ -1053,11 +1046,11 @@ Ammo().then((Ammo) => {
       true
     );
 
-    createBox(27, 2, -70, 4, 4, 1, boxTexture.email, URL.email, 0x000000, true);
+    createBox(37, 2, -70, 4, 4, 1, boxTexture.email, URL.email, 0x000000, true);
 
-    floatingLabel(11.875, 4.5, -70, "Github");
-    floatingLabel(19.125, 4.5, -70, "JueJin");
-    floatingLabel(26.875, 4.5, -70, "Email");
+    floatingLabel(21.875, 4.5, -70, "Github");
+    floatingLabel(29.125, 4.5, -70, "JueJin");
+    floatingLabel(36.875, 4.5, -70, "Email");
 
     allSkillsSection(-50, 0.025, 20, 40, 40, boxTexture.allSkills);
     allSkillsSection(61, 0.025, 19, 40, 60, inputText.activities);
@@ -1082,7 +1075,7 @@ Ammo().then((Ammo) => {
 
     simpleText(9, 0.01, 5, instructionsText, 1.25);
 
-    simpleText(23, 0.01, -60, touchText, 1.5);
+    simpleText(30, 0.01, -60, touchText, 1.5);
     simpleText(-50, 0.01, -5, "SKILLS", 3);
     simpleText(-42, 0.01, -20, "EXPERIENCE", 3);
     simpleText(61, 0.01, -15, "TIMELINE", 3);
